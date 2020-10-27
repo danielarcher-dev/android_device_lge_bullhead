@@ -5,7 +5,8 @@ LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
 # Too many clang warnings/errors, see b/23163853.
-LOCAL_CLANG := false
+# 2020-10-27    Daniel Archer           LOCAL_CLANG = false no longer supported. changed to true
+LOCAL_CLANG := true
 
 LOCAL_SRC_FILES := \
         util/QCameraCmdThread.cpp \
